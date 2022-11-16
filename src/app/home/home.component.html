@@ -2,9 +2,13 @@
 <h1 class="text-3xl font-bold underline">Home</h1>
 </a>
 
-<a routerLink="/store">store</a>
+<app-search></app-search>
 
+<app-store routerLink="/store"></app-store>
+
+<div class="py-5">
 <a routerLink="/cart" class="button fancy-button">
     <i class="material-icons">shopping_cart</i>
     Checkout
   </a>
+  </div>

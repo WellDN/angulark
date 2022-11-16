@@ -11,6 +11,7 @@ import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
 import { HomeComponent } from './home/home.component';
+import { SearchComponent } from './search/search.component';
 import { StoreComponent } from './store/store.component';
 
 @NgModule({
@@ -22,7 +23,6 @@ import { StoreComponent } from './store/store.component';
     { path: 'store', component: ProductListComponent },
     { path: 'products/:productId', component: ProductDetailsComponent },
     { path: 'cart', component: CartComponent },
-    { path: 'store', component: StoreComponent },
     { path: 'shipping', component: ShippingComponent },
     ])
   ],
@@ -34,7 +34,8 @@ import { StoreComponent } from './store/store.component';
     CartComponent,
     ShippingComponent,
     HomeComponent,
-    StoreComponent
+    SearchComponent,
+    StoreComponent,
   ],
   bootstrap: [
     AppComponent
