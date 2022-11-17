@@ -1,19 +1,19 @@
 <h2>Products</h2>
 
-<div *ngFor="let product of products">
+<div class="py-5" *ngFor="let product of products">
 
-<h3>
+<h3 class="py-5">
     <a [title]="product.name + 'details'"
         [routerLink]="['/products', product.id]">
     {{ product.name }}
 </a> 
 </h3>
 
-<p *ngIf="product.description">
+<p class="py-5" *ngIf="product.description">
 Description: {{ product.description }}
 </p>
 
-<button type="button" (click)="share()">
+<button class="py-5" type="button" (click)="share()">
     
     share
 

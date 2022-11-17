@@ -12,6 +12,9 @@ export class ProductDetailsComponent implements OnInit {
     this.CartService.addToCart(product);
     window.alert('Your product has been added to the cart!');
   }
+  ClearCart(product: Product) {
+    this.CartService.clearCart();
+  }
   product: Product | undefined;
   constructor(
     private route: ActivatedRoute,
@@ -28,4 +31,6 @@ export class ProductDetailsComponent implements OnInit {
   this.product = products.find(product => product.id ===
      productIdFromRoute);
   }
+
+
 }
